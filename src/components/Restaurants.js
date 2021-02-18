@@ -9,6 +9,7 @@ class Restaurants extends Component {
 
     return (
       <div>
+        {console.log(restaurants)}
         <ul>
           {restaurants}
         </ul>
@@ -20,5 +21,6 @@ class Restaurants extends Component {
 const mapStateToProps = state => {
   return { restaurants: state.restaurants }
 }
+
 
 export default connect(mapStateToProps)(Restaurants);
